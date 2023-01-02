@@ -65,7 +65,7 @@ export function activate(context: vscode.ExtensionContext) {
 
       const fieldsWithValues: any[] = [];
 
-      for (let i = 0; i < size - 1; i++) {
+      for (let i = 0; i < size; i++) {
         const value = {};
 
         fieldsWithTypes.forEach((field) => {
