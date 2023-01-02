@@ -1,8 +1,13 @@
 {
-  "name": "js-datastructre-generator",
-  "displayName": "js-datastructre-generator",
-  "description": "Generate mock js objects and arrays",
+  "name": "vscode-data-mock-generator",
+  "displayName": "vscode-data-mock-generator",
+  "description": "Generate mock data with your structure",
+  "publisher": "tuliocll",
   "version": "0.0.1",
+  "icon": "icon.png",
+  "repository": {
+    "url": "https://github.com/tuliocll/vscode-data-mock-generator"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -10,13 +15,13 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:js-datastructre-generator.generateData"
+    "onCommand:vscode-data-mock-generator.generateData"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "js-datastructre-generator.generateData",
+        "command": "vscode-data-mock-generator.generateData",
         "title": "Generate Mock Data"
       }
     ]

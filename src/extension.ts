@@ -10,7 +10,7 @@ import insertData from "./utils/insertData";
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
-    "js-datastructre-generator.generateData",
+    "vscode-data-mock-generator.generateData",
     async () => {
       const input = await vscode.window.showInputBox({
         title:
