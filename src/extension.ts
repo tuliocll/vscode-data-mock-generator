@@ -7,24 +7,20 @@ import {
 } from "./utils/typesMock";
 
 import insertData from "./utils/insertData";
+import validateInput from "./utils/validator";
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
     "vscode-data-mock-generator.generateData",
     async () => {
-      const input = await vscode.window.showInputBox({
+      let input = (await vscode.window.showInputBox({
         title:
           "Enter the comma-separated keys. You can optionally pass types using a colon character.",
         placeHolder: "id,name,age:number,city",
-      });
+        validateInput,
+      })) as string;
 
-      if (!input) {
-        vscode.window.showInformationMessage(
-          "You dont insert any data, aborting..."
-        );
-
-        return;
-      }
+      input = input.replace(/ /g, "");
 
       const userSize = await vscode.window.showInputBox({
         title: "How much do you want to generate?",

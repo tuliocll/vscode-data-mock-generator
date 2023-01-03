@@ -22,4 +22,10 @@ On the input and put the keys of the object that you want:
 | number | Return a random int                |
 | name   | Return a string with a random name |
 
+### TODO
+
+- Improve validators
+- Create new types
+- Add more mocks
+
 **Enjoy!**
