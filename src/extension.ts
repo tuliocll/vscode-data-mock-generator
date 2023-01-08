@@ -25,6 +25,8 @@ export function activate(context: vscode.ExtensionContext) {
 
         return;
       } catch (error) {
+        //TODO: improve and teste the error handler here
+        //@ts-ignore
         vscode.window.showErrorMessage(error);
       }
     }
