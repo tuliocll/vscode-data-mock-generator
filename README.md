@@ -1,9 +1,27 @@
-# JS Mock Data Generator
+# Vscode Mock Data Generator
 
 Generate mocks from your data structure in JSON format to speed up your tests and development!
 ![](preview.gif)
 
 ## How to use
+
+You can choose two ways to mock generation:
+
+### 🖱️ Creating a object schema (js like)
+
+Create a object with your keys and types directly in your editor:
+
+```javascript
+{
+    id: number,
+    name: name,
+    description: string
+}
+```
+
+Then select the object, open the command palette and type: `Generate Mock Data` and hit enter, type the size and the magic is done 🪄.
+
+### ⌨️ Typing schema on command pallete:
 
 Open the command palette and type: `Generate Mock Data`.
 
@@ -24,8 +42,10 @@ On the input and put the keys of the object that you want:
 
 ### TODO
 
-- Improve validators
+- ✅ ~~Improve validators~~
 - Create new types
 - Add more mocks
+- Improve "type system" to make easy for add new types
+- Put mocked data on json files
 
 **Enjoy!**
